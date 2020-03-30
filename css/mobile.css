@@ -1,0 +1,106 @@
+/* Tablets and Smaller */
+#main-head {
+  height: 30rem;
+}
+
+#main-head #head-content {
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.section-step > div {
+  padding: 0 1.3rem;
+}
+
+/* Smartphones */
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul li {
+    font-size: 1rem !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  #main-head {
+    height: 10rem;
+    background-position: 20% 30%;
+    border-bottom: 3px solid var(--primary-color);
+  }
+  #main-head #head-content {
+    display: none;
+  }
+
+  .section-step {
+    grid-template-columns: 1fr;
+  }
+
+  .section-step > div {
+    padding: 1.4rem 0;
+  }
+
+  #home-scnd .stats {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container p {
+    font-size: 1rem;
+    padding: 1.3rem 0;
+  }
+
+  .sec-about .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-about .about-content .bio {
+    margin-top: 1.5rem;
+  }
+
+  #sec-logo {
+    display: none;
+  }
+
+  #sec-testimon .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  #work .items {
+    grid-template-columns: 1fr !important;
+  }
+
+  #contact .text-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .text-fields input,
+  #contact .text-fields textarea {
+    margin-bottom: 1.3rem;
+  }
+
+  #contact-footer .list-contact {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-footer .list-contact div {
+    margin: 1.3rem 0;
+    border-bottom: 2px dotted #444;
+  }
+
+  #contact-footer .list-contact div p {
+    margin-bottom: 1rem;
+  }
+
+  #start-footer .py-3 {
+    padding: 1.3rem;
+  }
+
+  #start-footer h1 {
+    font-size: 1.5rem;
+  }
+}
